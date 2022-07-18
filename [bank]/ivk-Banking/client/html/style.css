@@ -1,0 +1,1207 @@
+html, body, p, button{
+	padding: 0;
+	margin: 0;
+}
+body.active{
+	background-color: rgba(0,0,0,0.5);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+@font-face {
+    font-family: vision-heavy;
+    src: url(media/font/Vision-Heavy.otf);
+}
+@font-face {
+    font-family: bariol;
+    src: url(media/font/Bariol_Regular.otf);
+}
+.container{
+	height: 56vh;
+	width: 83vh;
+	margin:auto;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "bariol", sans-serif;
+}
+
+.welcome-content{
+    position: fixed;
+
+    top: 8vh;
+    left: 20vw;
+
+    width: 62.5vw;
+    height: 75.28vh;
+
+    background: #1c2333;
+    border-radius: 10px;
+}
+
+.sidemenu {
+    position: fixed;
+    width: 18.22vw;
+    height: 75.28vh;
+    background: #161b27;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.logo{
+    position: fixed;
+    width: 20.83vw;
+    height: 28vh;
+    margin: 0;
+    top: 19vh;
+    left: 29vw;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.chip{
+    position: absolute;
+    width:50px;
+    height: 40;
+    margin: 0;
+    top: 35%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-con {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    position: fixed;
+    background: #293349;
+    width: 15.62vw;
+    height: 38.62vh;
+    top: 30vh;
+    left: 21.4vw;
+    border-radius: 10px;
+}
+
+.homepage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+}
+
+.withdrawalpage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+}
+
+.depositpage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+}
+
+.transferpage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+}
+
+.savingspage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+}
+
+.optionspage {
+    position: fixed;
+    background: #293349;
+    width: 41.66vw;
+    height: 70.33vh;
+    top: 9.90vh;
+    left: 39.06vw;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.accounthome {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 32%;
+    left: 22%;
+}
+
+.accounthome:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.nav button.active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.withdrawals {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 38%;
+    left: 22%;
+}
+
+.withdrawals:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+#withdrawals .active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.deposit {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 44%;
+    left: 22%;
+}
+
+.deposit:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+#deposit .active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.transfer {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 50%;
+    left: 22%;
+}
+
+.transfer:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+#transfer .active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.savings {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 56%;
+    left: 22%;
+}
+
+.savings:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+#savings .active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.options {
+    text-align: left;
+    width: 14.0vw;
+    height: 50px;
+    font-size: 18px;
+    background: rgba(21, 112, 230, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(21, 111, 230);
+    position: fixed;
+    top: 62%;
+    left: 22%;
+}
+
+.options:hover {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.options:active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+#options .active {
+    background: rgb(21, 111, 230);
+    color: rgb(255, 255, 255);
+}
+
+.close {
+    text-align: center;
+    width: 13.54vw;
+    height: 4.95vh;
+    font-size: 18px;
+    background: rgb(184, 28, 28);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 72.30vh;
+    left: 22.13vw;
+}
+
+.close:hover {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.close:active {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.homeTitle {
+    position: fixed;
+    top: 13vh;
+    left:41vw;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.homeInformation {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.withdrawalTitle {
+    position: fixed;
+    top: 15vh;
+    left:41vw;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.withdrawalInformation {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.balanceInfo {
+    position: fixed;
+    background: #1e2533;
+    width:18.22vw;
+    height: 18.5vh;
+    top: 27.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.balanceTitle {
+    position: fixed;
+    top: 28.5vh;
+    left:42.5vw;
+    color: #ffffff;
+}
+
+.balance {
+    position: fixed;
+    top: 33.5vh;
+    left:42.5vw;
+    color: #ffffff;
+}
+
+.balanceHelp {
+    position: fixed;
+    top: 40vh;
+    left: 42.5vw;
+    width: 15vw;
+    color: #ffffff;
+}
+
+.balanceTitle2 {
+    position: fixed;
+    top: 28.5vh;
+    left:62vw;
+    color: #ffffff;
+}
+
+.balance2 {
+    position: fixed;
+    top: 33.5vh;
+    left:62vw;
+    color: #ffffff;
+}
+
+.balanceHelp2 {
+    position: fixed;
+    top: 40vh;
+    left:62vw;
+    width: 15vw;
+    color: #ffffff;
+}
+
+.cashBalanceInfo {
+    position: fixed;
+    background: #1e2533;
+    width:18.22vw;
+    height: 18.5vh;
+    top: 27.5vh;
+    left: 60.8vw;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.cashBalanceTitle {
+    position: fixed;
+    top: 28.5vh;
+    left:62vw;
+    color: #ffffff;
+}
+
+.cashBalance {
+    position: fixed;
+    top: 33.5vh;
+    left:62vw;
+    color: #ffffff;
+}
+
+.cashBalanceHelp {
+    position: fixed;
+    top: 40vh;
+    left:62vw;
+    width: 15vw;
+    color: #ffffff;
+}
+
+.quickActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 29.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.quickActionsTitle {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.quickActionsHelp {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 85%;
+    color: #ffffff;
+}
+
+.deposit100 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 57.5vh;
+    left: 42.7vw;
+}
+
+.deposit100:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deposit100:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deposit1000 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 57.5vh;
+    left: 54.45vw;
+}
+
+.deposit1000:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deposit1000:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deposit10000 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 57.5vh;
+    left: 66.2vw;
+}
+
+.deposit10000:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deposit10000:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw100 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 65.05vh;
+    left: 42.7vw;
+}
+
+.withdraw100:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw100:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw1000 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 65.05vh;
+    left: 54.45vw;
+}
+
+.withdraw1000:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw1000:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw10000 {
+    position: fixed;
+    text-align: center;
+    width: 11.45vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 65.05vh;
+    left: 66.2vw;
+}
+
+.withdraw10000:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.withdraw10000:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.depositActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 29.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.DepositInformation {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.DepositInput {
+    position: fixed;
+    top: 55.7vh;
+    left: 42.6vw;
+}
+
+.WithdrawInformation {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.withdrawActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 29.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.WithdrawInput {
+    position: fixed;
+    top: 55.7vh;
+    left: 42.6vw;
+}
+
+.form-control {
+    position: fixed;
+    width: 25vw;
+    height: 4.5vh;
+    top: 55.8vh;
+    left: 42.5vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control2 {
+    position: fixed;
+    width: 25vw;
+    height: 4.5vh;
+    top: 54.8vh;
+    left: 42.5vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control3 {
+    position: fixed;
+    width: 25vw;
+    height: 4.5vh;
+    top: 63.8vh;
+    left: 42.5vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.WithdrawButton {
+    position: fixed;
+    text-align: center;
+    width: 7.81vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 55.8vh;
+    left: 68.2vw;
+}
+
+.WithdrawButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.WithdrawButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.DepositButton {
+    position: fixed;
+    text-align: center;
+    width: 7.81vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 55.8vh;
+    left: 68.2vw;
+}
+
+.DepositButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.DepositButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.createSavings {
+    position: absolute;
+    text-align: center;
+    width: 39.06vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 3%;
+    left: 3%;
+}
+
+.createSavings:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.createSavings:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.deleteSavings {
+    position: absolute;
+    text-align: center;
+    width: 39.06vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(184, 28, 28);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 90%;
+    left: 3%;
+}
+
+.deleteSavings:hover {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.deleteSavings:active {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.savingsDeposit {
+    position: absolute;
+    background: #1e2533;
+    width:725.8px;
+    height: 200px;
+    top: 30%;
+    left: 5%;
+    border-radius: 10px;
+}
+
+.savingsActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 23.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.SavingsDepositInformation {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.SavingsDepositInput {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+
+.SavingsWithdrawInformation {
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.SavingsWithdrawInput {
+    position: absolute;
+    top: 65%;
+    left: 4%;
+}
+
+.SavingsWithdrawButton {
+    position: fixed;
+    text-align: center;
+    width: 7.81vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 63.8vh;
+    left: 68.2vw;
+}
+
+.SavingsWithdrawButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.SavingsWithdrawButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.SavingsDepositButton {
+    position: fixed;
+    text-align: center;
+    width: 7.81vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 54.8vh;
+    left: 68.2vw;
+}
+
+.SavingsDepositButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.SavingsDepositButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+
+.transferActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 23.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.TransferDepositInformation {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.TransferDepositInput {
+    position: fixed;
+    top: 25%;
+    left: 4%;
+}
+
+.TransferWithdrawInformation {
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.TransferWithdrawInput {
+    position: absolute;
+    top: 65%;
+    left: 4%;
+}
+
+.TransferWithdrawButton {
+    position: fixed;
+    text-align: center;
+    width: 7.81vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 63.8vh;
+    left: 68.2vw;
+}
+
+.TransferWithdrawButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.TransferWithdrawButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.TransferDepositButton {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 25%;
+    left: 72%;
+}
+
+.TransferDepositButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.TransferDepositButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.cardDesign {
+    position: absolute;
+    background: #1a1f29;
+    width:250px;
+    height: 75px;
+    top: 15%;
+    left: 0%;
+    border-radius: 0 10px 10px 0;
+    color: #ffffff;
+}
+
+.cardInformation {
+    position: absolute;
+    width:250px;
+    height: 75px;
+    top: 60%;
+    left: 13%;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.cardInformation2 {
+    position: absolute;
+    width:250px;
+    height: 75px;
+    top: 75%;
+    left: 14%;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.cardInformation3 {
+    position: absolute;
+    width:250px;
+    height: 75px;
+    top: 85%;
+    left: 14%;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.OrderNewCardInformation {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    color: #ffffff;
+}
+
+.OrderNewCardButton {
+    position: fixed;
+    text-align: center;
+    width: 8vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 32.5vh;
+    left: 59.9vw;
+}
+
+.OrderNewCardButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.OrderNewCardButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.ChangePinInformation {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    color: #ffffff;
+}
+
+.ChangePinButton {
+    position: fixed;
+    text-align: center;
+    width: 8vw;
+    height: 4.5vh;
+    font-size: 18px;
+    background: rgb(21, 111, 230);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 40.2vh;
+    left: 59.9vw;
+}
+
+.ChangePinButton:hover {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.ChangePinButton:active {
+    background: rgb(24, 87, 170);
+    color: rgb(255, 255, 255);
+}
+
+.changePinActions {
+    position: fixed;
+    background: #1e2533;
+    width: 37.80vw;
+    height: 23.73vh;
+    top: 48.5vh;
+    left: 41.2vw;
+    border-radius: 10px;
+}
+
+.ComfirmChangePinButton {
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    background: rgb(28, 212, 68);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 70%;
+    left: 10%;
+}
+
+.ComfirmChangePinButton:hover {
+    background: rgb(32, 167, 77);
+    color: rgb(255, 255, 255);
+}
+
+.ComfirmChangePinButton:active {
+    background: rgb(32, 167, 77);
+    color: rgb(255, 255, 255);
+}
+
+.CancelChangePinButton {
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    background: rgb(184, 28, 28);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in, background 0.2s ease-in;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    top: 70%;
+    left: 55%;
+}
+
+.CancelChangePinButton:hover {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.CancelChangePinButton:active {
+    background: rgb(161, 29, 29);
+    color: rgb(255, 255, 255);
+}
+
+.NewPinInformation {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+
+.NewPinError {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    color: #963636;
+}
+
+.NewPinCreated {
+    position: absolute;
+    top: 43%;
+    left: 70%;
+    color: #3e9636;
+}
+
+.CreatePin {
+    position: absolute;
+    top: 35%;
+    left: 4%;
+}

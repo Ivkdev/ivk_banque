@@ -1,0 +1,198 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <style>
+			 #main, #home, #withdrawals1, #deposit1, #transfer1, #savings1, #options1
+			 {display: none;}
+		</style>
+	</head>
+    <body>
+    	<div class="container">
+			
+			<div class="center-con"> </div>
+
+			<div class="welcome-content" id="main">	
+				<div class="sidemenu">
+					<img class="logo" alt="ok" src="imgs/Logo.png" alt="ok">
+					<div class="nav">
+						<button class="accounthome" id="accounthome">Accueil du compte</button>
+						<button class="withdrawals" id="withdrawals">Retrait</button>
+						<button class="deposit" id="deposit">Dépôt</button>
+						<button class="transfer" id="transfer">Transfert</button>
+						<button class="savings" id="savings">Compte d'épargne</button>
+						<button class="options" id="options">Options du compte</button>
+					</div>
+					<button class="close" id="close">Fermer</button>
+				</div>
+			</div>
+
+			<div class="homepage" id="home">	
+				<div class="homeTitle"><h3>Fermer <span id="customerName"></span></h3></div>
+				<div class="homeInformation"><p>Bienvenue à <span id="serverName"></span> Depuis cet écran, vous pouvez effectuer des dépôts, des retraits et des transferts d'argent vers d'autres personnes. Vous pouvez également vérifier votre activité récente en utilisant votre relevé.</p></div>
+				
+				<div class="balanceInfo">
+					<div class="balanceTitle"><h3>Solde du compte bancaire</h3></div>
+					<div class="balance"><h3><span id="currency1"></span><span id="currentBalance"></span></h3></div>
+					<div class="balanceHelp"><p>Il s'agit actuellement du montant disponible à dépenser sur votre compte.</p></div>
+				</div>
+
+				<div class="cashBalanceInfo">
+					<div class="cashBalanceTitle"><h3>Solde de trésorerie actuel</h3></div>
+					<div class="cashBalance"><h3><span id="currency2"></span><span id="currentCashBalance"></span></h3></div>
+					<div class="cashBalanceHelp"><p>Il s'agit actuellement de la quantité d'argent liquide que vous avez sur vous.</p></div>
+				</div>
+
+				<div class="quickActions">
+					<div class="quickActionsTitle"><h3>Actions rapides</h3></div>
+					<button class="deposit100" id="deposit100">Dépôt <span id="currency3"></span>100</button>
+					<button class="deposit1000" id="deposit1000">Dépôt <span id="currency4"></span>1,000</button>
+					<button class="deposit10000" id="deposit10000">Dépôt <span id="currency5"></span>10,000</button>
+					<button class="withdraw100" id="withdraw100">Retirer <span id="currency6"></span>100</button>
+					<button class="withdraw1000" id="withdraw1000">Retirer <span id="currency7"></span>1,000</button>
+					<button class="withdraw10000" id="withdraw10000">Retirer <span id="currency8"></span>10,000</button>
+					<div class="quickActionsHelp"><p>Les actions rapides vous permettent de déposer ou de retirer plus rapidement que d'habitude.</p></div>
+				</div>
+			</div>
+
+			<div class="withdrawalpage" id="withdrawals1">	
+				<div class="withdrawalTitle"><b>Retrait</b></h3></div>
+				<div class="withdrawalInformation"><p>Vous pouvez retirer des montants spécifiques sur cet écran. Lorsque vous retirez de l'argent, il passe de votre banque à votre poche.</p></div>
+				<div class="balanceInfo">
+					<div class="balanceTitle"><h3>Solde du compte bancaire</h3></div>
+					<div class="balance"><h3><span id="currency9"></span><span id="currentBalance1"></span></h3></div>
+					<div class="balanceHelp"><p>Il s'agit actuellement du montant disponible à dépenser sur votre compte.</p></div>
+				</div>
+
+				<div class="cashBalanceInfo">
+					<div class="cashBalanceTitle"><h3>Solde de trésorerie actuel</h3></div>
+					<div class="cashBalance"><h3><span id="currency10"></span><span id="currentCashBalance1"></span></h3></div>
+					<div class="cashBalanceHelp"><p>Il s'agit actuellement de la quantité d'argent liquide que vous avez sur vous.</p></div>
+				</div>
+
+				<div class="withdrawActions">
+					<div class="WithdrawInformation"><h3>Saisissez ci-dessous le montant que vous souhaitez retirer.</h3></div>
+					<div class="WithdrawInput"><input type="number" placeholder="Amount" class="form-control" id="withdrawAmount" name="withdrawAmount"></div>
+					<button class="WithdrawButton" id="withdrawButton">Retirer</button>
+				</div>
+			</div>
+
+			<div class="depositpage" id="deposit1">	
+				<div class="withdrawalTitle"><b>Dépôt</b></h3></div>
+				<div class="withdrawalInformation"><p>Les dépôts de montants spécifiques peuvent être complétés sur cet écran. Les dépôts sont l'endroit où l'argent est placé sur votre compte courant.</p></div>
+				<div class="balanceInfo">
+					<div class="balanceTitle"><h3>Solde du compte bancaire</h3></div>
+					<div class="balance"><h3><span id="currency11"></span><span id="currentBalance2"></span></h3></div>
+					<div class="balanceHelp"><p>Il s'agit actuellement du montant disponible à dépenser sur votre compte.</p></div>
+				</div>
+
+				<div class="cashBalanceInfo">
+					<div class="cashBalanceTitle"><h3>Solde de trésorerie actuel</h3></div>
+					<div class="cashBalance"><h3><span id="currency12"></span><span id="currentCashBalance2"></span></h3></div>
+					<div class="cashBalanceHelp"><p>Il s'agit actuellement de la quantité d'argent liquide que vous avez sur vous.</p></div>
+				</div>
+
+				<div class="depositActions">
+					<div class="DepositInformation"><h3>Saisissez ci-dessous le montant que vous souhaitez déposer.</h3></div>
+					<div class="DepositInput"><input type="number" placeholder="Amount" class="form-control" id="depositAmount" name="depositAmount"></div>
+					<button class="DepositButton" id="depositButton">Dépôt</button>
+				</div>
+			</div>
+
+			<div class="transferpage" id="transfer1">	
+				<div class="withdrawalTitle"><b>Transfert</b></h3></div>
+				<div class="withdrawalInformation"><p>Les virements peuvent être effectués directement de votre compte courant vers le compte courant ou le compte d'épargne d'une autre personne en utilisant le numéro de compte et le code de tri dédiés.</p></div>
+				<div class="balanceInfo">
+					<div class="balanceTitle"><h3>Solde du compte bancaire</h3></div>
+					<div class="balance"><h3><span id="currency13"></span><span id="currentBalance3"></span></h3></div>
+					<div class="balanceHelp"><p>Il s'agit actuellement du montant disponible à dépenser sur votre compte.</p></div>
+				</div>
+
+				<div class="cashBalanceInfo">
+					<div class="cashBalanceTitle"><h3>Solde de trésorerie actuel</h3></div>
+					<div class="cashBalance"><h3><span id="currency14"></span><span id="currentCashBalance3"></span></h3></div>
+					<div class="cashBalanceHelp"><p>Il s'agit actuellement de la quantité d'argent liquide que vous avez sur vous.</p></div>
+				</div>
+
+				<div class="transferActions">
+					<div class="TransferDepositInformation"><h3>Saisissez l'identifiant de la personne à laquelle vous souhaitez transférer de l'argent.</h3></div>
+					<div class="TransferDepositInput"><input type="number" placeholder="ID" class="form-control2" id="transferID" name="transferID"></div>
+					<div class="TransferWithdrawInformation"><h3>Saisissez ci-dessous le montant que vous souhaitez envoyer.</h3></div>
+					<div class="TransferWithdrawInput"><input type="number" placeholder="Amount" class="form-control3" id="transferAmount" name="transferAmount"></div>
+					<button class="TransferWithdrawButton" id="transferButton">Transfert</button>
+				</div>
+			</div>
+
+			<div class="savingspage" id="savings1">	
+				<div class="savingsCreator" id="savingAccountCreator" style="display:none;">
+					<button class="createSavings" id="createSavings">Créer un compte d'épargne</button>
+				</div>
+				<div class="savingsAccount" id="savingAccount" style="display:none;">
+					<div class="withdrawalTitle"><b>Compte d'épargne</b></h3></div>
+					<div class="withdrawalInformation"><p>Votre compte d'épargne est l'endroit où vous pouvez stocker votre argent, et le laisser s'accumuler, vous seul pourrez retirer de l'argent de ce compte.</p></div>
+
+					<div class="balanceInfo">
+						<div class="balanceTitle"><h3>Solde du compte d'épargne</h3></div>
+						<div class="balance"><h3><span id="currency15"></span><span id="currentSavingBalance"></span></h3></div>
+						<div class="balanceHelp"><p>C'est actuellement le montant qui se trouve sur votre compte d'épargne.</p></div>
+					</div>
+	
+					<div class="cashBalanceInfo">
+						<div class="balanceTitle2"><h3>Solde du compte bancaire</h3></div>
+						<div class="balance2"><h3><span id="currency16"></span><span id="currentBalance4"></span></h3></div>
+						<div class="balanceHelp2"><p>Il s'agit actuellement du montant disponible à dépenser sur votre compte.</p></div>
+					</div>
+
+					<div class="savingsActions">
+						<div class="SavingsDepositInformation"><h3>Saisissez ci-dessous le montant que vous souhaitez déposer.</h3></div>
+						<div class="SavingsDepositInput"><input type="number" placeholder="Amount" class="form-control2" id="savingsDepositAmount" name="savingsDepositAmount"></div>
+						<button class="SavingsDepositButton" id="savingsDepositButton">Dépôt</button>
+						<div class="SavingsWithdrawInformation"><h3>Saisissez ci-dessous le montant que vous souhaitez retirer.</h3></div>
+						<div class="SavingsWithdrawInput"><input type="number" placeholder="Amount" class="form-control3" id="savingsWithdrawAmount" name="savingsWithdrawAmount"></div>
+						<button class="SavingsWithdrawButton" id="savingsWithdrawButton">Withdraw</button>
+					</div>
+
+					<button class="deleteSavings" id="deleteSavings">Supprimer le compte épargne</button>
+				</div>
+			</div>
+
+			<div class="optionspage" id="options1">	
+				<div class="withdrawalTitle"><b>Options du compte</b></h3></div>
+				<div class="withdrawalInformation"><p>Il s'agit des options de votre compte, où vous pourrez modifier les caractéristiques de votre compte et consulter les informations que vous ne pouvez pas voir sur les autres pages.</p></div>
+
+				<div class="balanceInfo">
+					<div class="cardDesign"></div>
+					<div class="cardDesign2"></div>
+					<img class="chip" alt="ok" src="https://imgur.com/mFjt5xP.png" alt="ok">
+					<div class="cardInformation"><p>1234 5678 9876 5432</p></div>
+					<div class="cardInformation2"><p>1234</p></div>
+					<div class="cardInformation3"><p><span id=customerCardName></span></p></div>
+				</div>
+
+				<div class="OrderNewCardInformation"><h3>Vous avez perdu votre carte bancaire, commandez-en une nouvelle ici !</h3></div>
+				<button class="OrderNewCardButton" id="orderNewCardButton">Demande de carte</button>
+
+				<div class="ChangePinInformation"><h3>Définissez / Changez votre code pin ici !</h3></div>
+				<button class="ChangePinButton" id="changePinButton">Changez la broche</button>
+				<div class="NewPinCreated" id="pinCreated" style="display:none;"><h3>Broche créée.</h3></div>
+
+				<div class="changePin" id="changePin" style="display:none;">
+					<div class="changePinActions">
+						<div class="NewPinInformation"><h3>Enter your new pin.</h3></div>
+						<div class="NewPinError" id="showError" style="display:none;"><h3>La broche doit comporter 4 chiffres.</h3></div>
+						<div class="CreatePin"><input type="number" placeholder="Amount" class="form-control" id="createPin" name="createPin"></div>
+						<button class="ComfirmChangePinButton" id="comfirmChangePinButton">Confirmer</button>
+						<button class="CancelChangePinButton" id="cancelChangePinButton">Annuler</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="script.js"></script>
+    </body>
+</html>

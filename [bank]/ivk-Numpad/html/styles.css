@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,900);
+ html, body {
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   font-family: "Lato", helvetica, arial, sans-serif;
+}
+ body {
+   padding-top:20%;
+   background-size: cover;
+   display: inline-block;
+   overflow: hidden;
+}
+
+
+ #wrap {
+   display: none;
+   position: relative;
+   width: 12%;
+   height:22%;
+   margin: 5% auto;
+   overflow: visible;
+
+}
+
+#PINform input:focus,
+#PINform select:focus,
+#PINform textarea:focus,
+#PINform button:focus {
+   outline: none;
+}
+#PINform {
+   background-image: url(https://imgur.com/c5ePut5.jpg);
+   position: absolute;
+   width: 240px; height: 166px;
+   left: 50%;
+   margin-left: -180px;
+   top: 50%;
+   margin-top: -215px;
+   padding: 30px;
+      -webkit-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+         -moz-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+              box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+}
+#PINbox {
+   background: #ededed00;
+   margin: 3.5%;
+   width: 92%;
+   font-size: 4em;
+   text-align: center;
+   border: 1px solid #d5d5d500;
+}
+.PINbutton {
+   position: relative;
+   top: -63%;
+   left: -6.3%;
+   background: #ededed00;
+   color: #7e7e7e00;
+   border: none;
+   font-size: 1.5em;
+   text-align: center;
+   width: 60px;
+   height: 40px;
+   margin: 4px 2px;
+   padding: 0;
+}
+
+.zero {
+   position: absolute;
+   top: 72%;
+   left: 25.5%;
+
+}
+
+.clear {
+   position: absolute;
+   top: 31%;
+   left: 72.5%;
+   font-size: 1em;
+}
+
+.enter {
+   position: absolute;
+   top: 52%;
+   left: 72.5%;
+   font-size: 1em;
+}
+
+.cancel {
+   position: absolute;
+   top: 10%;
+   left: 72.5%;
+   font-size: 1em;
+}
+
+.shadow{
+      -webkit-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+         -moz-box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+              box-shadow: 0px 5px 5px -0px rgba(0,0,0,0.3);
+}
+
+.NeedGone {
+   opacity: 0%;
+}
