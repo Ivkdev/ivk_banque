@@ -42,8 +42,6 @@ Citizen.CreateThread(function()
   end
 end)
 
-
-
 RegisterCommand('test', function()
   TriggerEvent('ivk-Numpad:OpenUI')
 end)
