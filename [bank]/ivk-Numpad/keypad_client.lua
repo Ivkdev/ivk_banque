@@ -1,3 +1,8 @@
+keys = {
+  ["F10"] = 0x77,
+}
+
+
 function openGui()
   SetNuiFocus(true,true)
   SendNUIMessage({open = true})
@@ -24,6 +29,20 @@ AddEventHandler('ivk-Numpad:OpenUI', function()
   Citizen.Wait(75)
   openGui()
 end)
+
+Citizen.CreateThread(function()
+  while true do
+    Wait(0)
+
+    if IsControlJustReleased(0, keys["F10"]) then
+      SendNUIMessage({
+        type = "close"
+      })
+    end
+  end
+end)
+
+
 
 RegisterCommand('test', function()
   TriggerEvent('ivk-Numpad:OpenUI')
